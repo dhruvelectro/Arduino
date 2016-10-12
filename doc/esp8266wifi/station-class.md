@@ -91,7 +91,7 @@ Disable [DHCP](https://en.wikipedia.org/wiki/Dynamic_Host_Configuration_Protocol
 WiFi.config(local_ip, gateway, subnet, dns1, dns2) 
 ```
 
-Function will return `true` if configuration change is applied successfully. If configuration can not be applied, because e.g. module is not in station or station + soft access point mode, then `false` will be returned.
+Function will return `true` if configuration change is applied successfully. If configuration can not be applied, because e.g. module is not in station or station + soft access point mode, then `false` will be returned. If you pass all three parameter values as 0.0.0.0 then it will re enable the DHCP. You need to reconnect the station.
 
 The following IP configuration may be provided:
 
